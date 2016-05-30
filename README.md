@@ -4,11 +4,11 @@ Quick and dirty fundamental analysis based on P/E and P/BV. You may find some di
       python Foundamental.py
       
 #   1. 5. Warren Buffett Stock Basics: Preston Pysh
-       https://www.youtube.com/watch?v=_uQjGz6jp2E
+https://www.youtube.com/watch?v=_uQjGz6jp2E
 #   2. List of S&P 500 companies
-       https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
+https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
 #   3. Yahoo Finance
-       http://finance.yahoo.com/q/ks?s=MMM
+http://finance.yahoo.com/q/ks?s=MMM
       
       
 
