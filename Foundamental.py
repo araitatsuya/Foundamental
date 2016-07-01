@@ -10,6 +10,7 @@ MAGICNUM_PBR_PE = 22.5
 def  yahooKeyStats(stock):
     try:
         sourceCode = urllib2.urlopen('http://finance.yahoo.com/q/ks?s='+stock).read()
+        stock_p = sourceCode.split('<span class="time_rtq_ticker"><span id="yfs_l84_'+stock.lower()+'">')[1].split('</span>')[0]
         pbr = sourceCode.split('Price/Book (mrq):</td><td class="yfnc_tabledata1">')[1].split('</td>')[0]
         per = sourceCode.split('Trailing P/E (ttm, intraday):</td><td class="yfnc_tabledata1">')[1].split('</td>')[0]
         
@@ -17,7 +18,7 @@ def  yahooKeyStats(stock):
         #print 'Trailing P/E ', per
         #print  float(per) * float(pbr)
         if  float(per) * float(pbr) < MAGICNUM_PBR_PE:
-            print stock
+            print stock, stock_p
             #P/E * P/BV < 22.5
     
     except Exception, e:
